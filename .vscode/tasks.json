@@ -1,0 +1,48 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "tsc: build current file",
+      "command": "npx",
+      "type": "shell",
+      "presentation": {
+        "echo": true,
+        "reveal": "silent",
+        "revealProblems": "onProblem",
+        "close": true,
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      },
+      "args": [
+        "tsc",
+        "${file}",
+        "--target",
+        "es5",
+        "--outDir",
+        "./dist",
+        "--sourceMap",
+        "--strict"
+      ],
+      "problemMatcher": "$gulp-tsc"
+    },
+    {
+      "label": "tsc: build the project",
+      "command": "npx",
+      "type": "shell",
+      "presentation": {
+        "echo": true,
+        "reveal": "silent",
+        "revealProblems": "onProblem",
+        "close": true,
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      },
+      "args": ["tsc", "-p", "."],
+      "problemMatcher": "$gulp-tsc"
+    }
+  ]
+}

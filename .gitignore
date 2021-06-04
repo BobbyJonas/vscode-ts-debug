@@ -1,0 +1,7 @@
+node_modules/
+
+# workspace
+src/**/*
+!src/README.md
+dist/**/*
+!dist/README.md
