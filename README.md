@@ -1,5 +1,11 @@
 ## 在 VSCode 下使用 TypeScript 愉快刷题
 
+VSCode 下的 TypeScript 调试方法，附带以下 TS 个人题解：
+
+- 剑指 Offer
+- leetcode 题库前 200
+- TypeChallenge 题库部分题目
+
 ### 食用方法
 
 #### 安装环境
