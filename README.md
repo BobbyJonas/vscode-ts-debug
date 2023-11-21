@@ -12,10 +12,10 @@ VSCode 下的 TypeScript 断点调试方法，附带个人 OJ 题库题解：
 
 使用 `git clone` 将本仓库克隆到本地，或者下载当前包.
 
-1. 全局安装 `typescript` 和 `tsc`：
+1. 全局安装 `typescript` 和 `ts-node`：
 
    ```shell
-   npm install typescript tsc -g
+   npm install typescript ts-node -g
    ```
 
 2. `cd` 到该目录，并执行命令行 `npm install`

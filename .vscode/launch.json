@@ -2,18 +2,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Launch Program",
-      "type": "node",
-      "request": "launch",
-      "program": "${file}",
-      "preLaunchTask": "tsc: build current file",
-      "outFiles": ["${workspaceFolder}/dist/**/*.js"],
-      "cwd": "${workspaceFolder}",
-      "sourceMaps": true,
-      "skipFiles": ["<node_internals>/**", "node_modules/**"],
-    },
-    {
-      "name": "Launch Program (Build the Project)",
+      "name": "Launch Program (tsc)",
       "type": "node",
       "request": "launch",
       "program": "${file}",
@@ -21,7 +10,18 @@
       "outFiles": ["${workspaceFolder}/dist/**/*.js"],
       "cwd": "${workspaceFolder}",
       "sourceMaps": true,
-      "skipFiles": ["<node_internals>/**", "node_modules/**"],
+      "skipFiles": ["<node_internals>/**", "node_modules/**"]
+    },
+    {
+      "name": "Launch Program (swc)",
+      "type": "node",
+      "request": "launch",
+      "program": "${file}",
+      "preLaunchTask": "swc: build the project",
+      "outFiles": ["${workspaceFolder}/dist/**/*.js"],
+      "cwd": "${workspaceFolder}",
+      "sourceMaps": true,
+      "skipFiles": ["<node_internals>/**", "node_modules/**"]
     }
   ]
 }
