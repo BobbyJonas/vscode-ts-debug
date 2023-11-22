@@ -1,12 +1,15 @@
 {
+  "$schema": "https://json.schemastore.org/swcrc",
   "jsc": {
     "parser": {
-      "syntax": "typescript"
+      "syntax": "typescript",
+      "decorators": true,
+      "dynamicImport": true
     },
-    "target": "esnext"
-  },
-  "module": {
-    "type": "es6"
+    "target": "es2022",
+    "transform": {
+      "decoratorMetadata": true
+    }
   },
   "sourceMaps": true
 }
